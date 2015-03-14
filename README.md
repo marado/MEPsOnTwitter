@@ -12,4 +12,4 @@ know!
 
 This is used (at least) in: 
 
-* TTIPTuesday - https://github.com/marado/TTIPTuesday
+* TTIPTuesday - http://marado.github.io/TTIPTuesday
