@@ -17,12 +17,15 @@ var MEPsAustria = [
 
 var MEPsBelgium = [
 "gannemans",
+"Mariearenaps",
 "PASCALARIMONT",
+"HuguesBayet",
 "IvoBelet",
 "debackerphil",
 "markdemesmaeker",
 "louis_ide",
 "ph_lamberts",
+"LouisMichelMR",
 "Frederiqueries",
 "clauderolin",
 "BartStaes",
