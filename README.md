@@ -12,15 +12,16 @@ Procura por nome e digitação manual.
 
 ## Licença
 
-CC0 1.0 Universal
+PPDL 1-0
 
 ## Edição
 
 Projecto começado por [Marcos Marado](https://github.com/marado) em Março 2008.
-Última actualização - Ver página Master no GitHub.
+
+Última actualização - Ver timeline do GitHub.
 
 ## Version
-Last update was in April, 2015.
+A informação foi recolhida pela última vez em *April, 2015*.
 
 ## Utilizações
 * TTIPTuesday - http://marado.github.io/TTIPTuesday
