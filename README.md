@@ -1,15 +1,26 @@
 # MEPsOnTwitter
-A list of Members of the European Parliament on Twitter
 
-* MEPs-on-Twitter.csv - The list in CSV format
-* js-generator.sh - a script that transforms the CSV in a JavaScript file
-* MEPs-on-Twitter.js - the output of js-generator.sh
+Lista dos membros do Parlamento Europeu.
 
-## Usage
+* MEPs-on-Twitter.csv - Lista em CSV
+* datapackage.json - Lista em JSON
 
-Use this in any way you want. If you use this somewhere, feel free to let me
-know!
 
-This is used (at least) in: 
+## Obtenção
 
+Procura por nome e digitação manual.
+
+## Licença
+
+CC0 1.0 Universal
+
+## Edição
+
+Projecto começado por [Marcos Marado](https://github.com/marado) em Março 2008.
+Última actualização - Ver página Master no GitHub.
+
+## Version
+Last update was in April, 2015.
+
+## Utilizações
 * TTIPTuesday - http://marado.github.io/TTIPTuesday

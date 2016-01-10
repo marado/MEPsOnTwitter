@@ -1,0 +1,49 @@
+{
+  "name": "meps-on-twitter",
+  "title": "Eurodeputados e Redes Sociais",
+  "homepage": "http://centraldedados.pt/datasets/meps-on-twitter",
+  "repository": "git://github.com/centraldedados/MEPsOnTwitter.git",
+  "version": "0.1.0",
+  "description": "Presença no Twitter dos Eurodeputados",
+  "license": "PDDL-1.0",
+  "sources": [
+    {
+      "name": "Twitter",
+      "web": "http://www.twitter.com"
+    }
+  ],
+  "resources": [
+    {
+      "name": "meps-on-twitter",
+      "title": "Eurodeputados e Redes Sociais",
+      "path": "data/MEPs-on-Twitter.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 30987,
+      "schema": {
+        "fields": [
+          {
+            "name": "name",
+            "type": "string",
+            "description": "Nome do deputado"
+          },
+          {
+            "name": "twitter",
+            "type": "string",
+            "description": "Twitter ID"
+          },
+          {
+            "name": "party",
+            "type": "string",
+            "description": "Grupo Partidário"
+          },
+          {
+            "name": "nationality",
+            "type": "string",
+            "description": "Nacionalidade do deputado"
+          }
+        ]
+      }
+    }
+  ]
+}
