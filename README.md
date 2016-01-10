@@ -16,7 +16,7 @@ PPDL 1-0
 
 ## Edição
 
-Projecto começado por [Marcos Marado](https://github.com/marado) em Março 2008.
+Projecto começado por [Marcos Marado](https://github.com/marado) em Março de 2015.
 
 Última actualização - Ver timeline do GitHub.
 
