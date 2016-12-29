@@ -1,6 +1,11 @@
 #!/bin/bash
 
-# uncomment this to production
+# check dependencies
+if ! type xml2 >/dev/null 2>&1 ; then
+	echo "You need xml2 in order to use this script."
+	exit
+fi
+
 wget "http://www.europarl.europa.eu/meps/en/xml.html?query=full&filter=all" -O all-meps.xml
 
 # the following command will give you the MEP names... but in a different format
