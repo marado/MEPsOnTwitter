@@ -1,28 +1,15 @@
 #!/bin/bash
 
 # check dependencies
-if ! type xml2 >/dev/null 2>&1 ; then
-	echo "You need xml2 in order to use this script."
+if ! type wget >/dev/null 2>&1 ; then
+	echo "You need wget in order to use this script."
 	exit
 fi
 
-wget "http://www.europarl.europa.eu/meps/en/xml.html?query=full&filter=all" -O all-meps.xml
+if ! type dos2unix >/dev/null 2>&1 ; then
+	echo "You need wget in order to use this script."
+	exit
+fi
 
-# the following command will give you the MEP names... but in a different format
-# xml2 < all-meps.xml |grep fullName|sort -u|cut -d= -f2-
-
-# so let's transform it to the format used in the CSV:
-# real
-for linenumber in $(seq 1 $(xml2 < all-meps.xml |grep fullName|cut -d= -f2-|wc -l)); do 
-# testing with just the first line for dev purposes
-#for linenumber in $(seq 1 1); do 
-	line=$(xml2 < all-meps.xml |grep fullName|cut -d= -f2-|head -n $linenumber|tail -n 1);
-	lowercase=$(echo $(for word in $(echo $line); do echo $word | egrep "[^[:upper:] ]"; done)|sed ':a;N;$!ba;s/\n/ /g');
-	uppercase=$(echo $(for word in $(echo $line); do echo $word | egrep -v "[^[:upper:] ]"; done)|sed ':a;N;$!ba;s/\n/ /g');
-	# echo "Name: $lowercase; Surname: $uppercase";
-	echo "$uppercase $lowercase";
-done > all-meps.txt
-
-for i in $(seq 1 $(cat all-meps.txt|wc -l)); do echo -n "$(head all-meps.txt -n$i|tail -n1):"; grep "$(head all-meps.txt -n$i|tail -n1)" MEPs-on-Twitter.csv|wc -l; done > found.txt
-
-
+wget "https://docs.google.com/spreadsheets/d/14Y3MBdIVsKt361l8qMGEecjGkxV5PCOfuKOMptfBB-k/export?format=csv&id=14Y3MBdIVsKt361l8qMGEecjGkxV5PCOfuKOMptfBB-k&gid=0" -o /dev/null -O - | dos2unix |sed 's/,$//g' > MEPs-on-Twitter.csv
+bash js-generator.sh > MEPs-on-Twitter.js
