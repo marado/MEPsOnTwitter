@@ -1,9 +1,17 @@
 # MEPsOnTwitter
-A list of Members of the European Parliament on Twitter
+A list of Members of the European Parliament on Twitter, on Javascript format
 
-* MEPs-on-Twitter.csv - The list in CSV format
-* update-meps.sh - a script that fetches the data source and regenerates both CSV and JS files
-* js-generator.sh - a script that transforms the CSV in a JavaScript file
+[European-Parliament-Open-Data](https://github.com/eliflab/European-Parliament-Open-Data)
+is a very nice project that publishes a (maintained) list of European MEPs,
+including the country they represent and their twitter accounts, on CSV. This
+valuable data can be used in several ways, one of which is to build some
+software (a website, for eg.) around it. For that purpose, MEPsOnTwitter
+publishes a version of that same data in an includeable Javascript file,
+allowing your project to automaticly generate a list of MEPs, allow you to
+tweet to them, or anything else you can think of.
+
+This repository contains the following relevant files:
+* js-generator.sh - a script that fetches the CSV and transforms it into a JavaScript file
 * MEPs-on-Twitter.js - the output of js-generator.sh
 
 ## Usage
