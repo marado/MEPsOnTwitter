@@ -23,3 +23,4 @@ This is used (at least) in:
 
 * TTIPTuesday - http://marado.github.io/TTIPTuesday
 * Central de Dados - https://github.com/centraldedados/PARLAMENTOEU-deputados-Twitter
+* CETACheckTwitter - http://marado.github.io/CETACheckTwitter
