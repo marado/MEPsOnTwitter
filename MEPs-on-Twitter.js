@@ -533,6 +533,7 @@ var MEPsPortugal = [
 "SofiaHRibeiro",
 "LilianaMEP",
 "MJRodriguesEU",
+"fernandoruas",
 "czorrinho",
 ];
 
