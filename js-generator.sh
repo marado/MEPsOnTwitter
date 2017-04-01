@@ -1,8 +1,10 @@
 #!/bin/bash
 
+# Validate dependencies
+command -v git >/dev/null 2>&1 || { echo >&2 "You need to install git to use this.  Aborting."; exit 1; }
+
 # Fetch the CSV
 rm -rf European-Parliament-Open-Data
-# TODO: validate if git is installed
 git clone https://github.com/eliflab/European-Parliament-Open-Data.git
 
 # Generate the JS file
