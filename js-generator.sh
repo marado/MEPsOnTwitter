@@ -29,7 +29,7 @@ echo "$countries" | while read -r country; do
 	echo "var MEPs$countrycode = [";
 	meps=$(echo "$csv"|grep "$country,"|cut -d, -f3|grep -v ^$);
 	for mep in $meps; do
-		echo "\"$(echo $mep|sed 's/@//')\",";
+		echo "\"${mep/@/}\",";
 	done;
 	echo "];"; 
 	echo "";
