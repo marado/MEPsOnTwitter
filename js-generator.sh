@@ -1,7 +1,11 @@
 #!/bin/bash
 
 # Validate dependencies
-command -v git >/dev/null 2>&1 || { echo >&2 "You need to install git to use this.  Aborting."; exit 1; }
+command git >/dev/null 2>/dev/null;
+if [ $? -eq 127 ]; then
+	echo "You need to install git to use this.  Aborting.";
+	exit 1;
+fi
 
 # Fetch the CSV
 rm -rf European-Parliament-Open-Data
